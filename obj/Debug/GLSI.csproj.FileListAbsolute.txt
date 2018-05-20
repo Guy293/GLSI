@@ -1,0 +1,16 @@
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.csprojResolveAssemblyReference.cache
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.Main.resources
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.Properties.Resources.resources
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.csproj.GenerateResource.cache
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\GLSI.exe.config
+D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\GLSI.exe
+D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\GLSI.pdb
+D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\CSGSI.dll
+D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\Newtonsoft.Json.dll
+D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\CSGSI.xml
+D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\Newtonsoft.Json.xml
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.csproj.CopyComplete
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.exe
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.pdb
+D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.SetUpCSGO.resources
