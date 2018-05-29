@@ -9,8 +9,6 @@ D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\GLSI.pdb
 D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\CSGSI.dll
 D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\Newtonsoft.Json.dll
 D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\CSGSI.xml
-D:\VisualStudioProjects\GLSI\GLSI\bin\Debug\Newtonsoft.Json.xml
 D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.csproj.CopyComplete
 D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.exe
 D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.pdb
-D:\VisualStudioProjects\GLSI\GLSI\obj\Debug\GLSI.SetUpCSGO.resources

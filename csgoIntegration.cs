@@ -3,37 +3,48 @@ using System;
 
 namespace GLSI
 {
-    class CsgoIntegration
+    public class CsgoIntegration
     {
-        public static bool toCountKills = false;
+        public static bool ToCountKills = false;
         public static bool ToCountDeaths = false;
+        public static bool ToCountAssists = false;
 
-        CsgoIntegration()
+        // Set game state listener to http://localhost:6996/
+        public GameStateListener gsl;
+
+        public CsgoIntegration()
         {
-            // Set game state listener to http://localhost:6969/
-            GameStateListener gsl = new GameStateListener(6969);
             // Set game event handler to function
+            GameStateListener gsl = new GameStateListener(6996);
             gsl.NewGameState += OnNewGameState;
-            Console.WriteLine(gsl.Start());
+            gsl.Start();
         }
 
         void OnNewGameState(GameState gs)
         {
-            Console.WriteLine(gs.JSON);
             //TODO save to program folder
-            if (gs.Previously.Player.MatchStats.Kills != gs.Added.Player.MatchStats.Kills)
+
+            if (ToCountKills &&
+                (gs.Previously.Player.MatchStats.Kills != gs.Added.Player.MatchStats.Kills) &&
+                gs.Player.MatchStats.Kills != -1)
             {
-                if (toCountKills)
-                {
-                    //File.WriteAllText("C:\\Users\\gshef\\Desktop\\kills.txt", gs.Player.MatchStats.Kills.ToString());
+                //File.WriteAllText("C:\\Users\\gshef\\Desktop\\kills.txt", gs.Player.MatchStats.Kills.ToString());
 
-                    Console.WriteLine(gs.Player.MatchStats.Kills);
-                }
+                Console.WriteLine(gs.Player.MatchStats.Kills);
+            }
 
-                if (ToCountDeaths)
-                {
-                    Console.WriteLine(gs.Player.MatchStats.Deaths);
-                }
+            if (ToCountDeaths &&
+                (gs.Previously.Player.MatchStats.Deaths != gs.Added.Player.MatchStats.Deaths) &&
+                gs.Player.MatchStats.Deaths != -1)
+            {
+                Console.WriteLine(gs.Player.MatchStats.Deaths);
+            }
+
+            if (ToCountAssists &&
+                (gs.Previously.Player.MatchStats.Assists != gs.Added.Player.MatchStats.Assists) &&
+                gs.Player.MatchStats.Assists != -1)
+            {
+                Console.WriteLine(gs.Player.MatchStats.Assists);
             }
         }
     }

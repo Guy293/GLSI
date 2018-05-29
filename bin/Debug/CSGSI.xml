@@ -237,12 +237,6 @@
             Is raised when a round begins (i.e. exits FreezeTime). Contains information about team scores and total round amount.
             </summary>
         </member>
-        <member name="T:CSGSI.Nodes.AllPlayersNode">
-            <summary>
-            A node that contains a list of PlayerNodes. <para/>
-            This is only available when watching a demo or when spectating on a server with mp_forcecamera 1
-            </summary>
-        </member>
         <member name="P:CSGSI.Nodes.AllPlayersNode.Item(System.Int32)">
             <summary>
             Gets the player with index &lt;index&gt;
@@ -267,8 +261,8 @@
         </member>
         <member name="F:CSGSI.Nodes.MapNode.Round">
             <summary>
-            The current round number <para/>
-            Attention: This is set to 0 for both warmup and pistol-round, check .Phase to prevent errors.
+            The current round number
+            !! This is set to 0 for both warmup and pistol-round, check .Phase to prevent errors !!
             </summary>
         </member>
         <member name="F:CSGSI.Nodes.MapNode.TeamCT">
@@ -281,61 +275,12 @@
             Contains information about the Terrorist team such as current score.
             </summary>
         </member>
-        <member name="F:CSGSI.Nodes.MapNode.NumMatchesToWinSeries">
-            <summary>
-            Presumable used for tournaments.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapNode.CurrentSpectators">
-            <summary>
-            The amount of people currently spectating.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapNode.SouvenirsTotal">
-            <summary>
-            Presumably used for tournaments to keep track of how many souvenir drops have been dropped to spectators.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapPhase.Live">
-            <summary>
-            Match is live.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapPhase.Intermission">
-            <summary>
-            Match is currently in an intermission (e.g. half time pause).
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapPhase.GameOver">
-            <summary>
-            Match has ended (i.e. currently displaying the end scoreboard).
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapMode.Casual">
-            <summary>
-            Casual
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapMode.Competitive">
-            <summary>
-            Competitive
-            </summary>
-        </member>
         <member name="F:CSGSI.Nodes.MapMode.GunGameProgressive">
             <summary>
             Gun Game
             </summary>
         </member>
-        <member name="F:CSGSI.Nodes.MapMode.GunGameTRBomb">
-            <summary>
-            Arms Race &amp; Demolition
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.MapMode.ScrimComp2v2">
-            <summary>
-            Wingman
-            </summary>
-        </member>
+        <!-- Badly formed XML comment ignored for member "F:CSGSI.Nodes.MapMode.GunGameTRBomb" -->
         <member name="P:CSGSI.Nodes.NodeBase.HasData">
             <summary>
             Whether or not this node contains data (i.e. JSON string is not empty)
@@ -372,65 +317,10 @@
             Contains information about the players' state (i.e. health, flashbang-status etc.)
             </summary>
         </member>
-        <member name="F:CSGSI.Nodes.PlayerNode.Position">
-            <summary>
-            The position of this player in the world.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.PlayerNode.Forward">
-            <summary>
-            The direction the player is currently facing.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.PlayerActivity.Menu">
-            <summary>
-            Is in a menu (also applies to opening the in game menu with ESC).
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.PlayerActivity.Playing">
-            <summary>
-            Playing or spectating.
-            </summary>
-        </member>
         <member name="F:CSGSI.Nodes.PlayerActivity.TextInput">
             <summary>
-            Console is open.
+            Console is open
             </summary>
-        </member>
-        <member name="T:CSGSI.Nodes.Vector3">
-            <summary>
-            A 3 dimensional vector.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.Vector3.X">
-            <summary>
-            The X component of the vector (left/right).
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.Vector3.Y">
-            <summary>
-            The Y component of the vector (up/down).
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.Vector3.Z">
-            <summary>
-            The Z component of the vector (forward/backward).
-            </summary>
-        </member>
-        <member name="M:CSGSI.Nodes.Vector3.#ctor(System.Double,System.Double,System.Double)">
-            <summary>
-            Initialises a new vector with the given X, Y and Z components.
-            </summary>
-            <param name="x"></param>
-            <param name="y"></param>
-            <param name="z"></param>
-        </member>
-        <member name="M:CSGSI.Nodes.Vector3.ToString">
-            <summary>
-            Generates a string formatted like so: <para/>
-            (X, Y, Z)
-            </summary>
-            <returns>The string representation of this vector.</returns>
         </member>
         <member name="F:CSGSI.Nodes.RoundNode.WinTeam">
             <summary>
@@ -455,21 +345,6 @@
         <member name="F:CSGSI.Nodes.WeaponNode.Paintkit">
             <summary>
             The skin this weapon currently has.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.WeaponNode.AmmoClip">
-            <summary>
-            The current ammunition.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.WeaponNode.AmmoClipMax">
-            <summary>
-            The maximum ammunition per magazine.
-            </summary>
-        </member>
-        <member name="F:CSGSI.Nodes.WeaponNode.AmmoReserve">
-            <summary>
-            The remaining ammunition that is not currently in the magazine.
             </summary>
         </member>
         <member name="P:CSGSI.Nodes.WeaponsNode.ActiveWeapon">
