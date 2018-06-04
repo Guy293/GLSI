@@ -30,6 +30,7 @@ If you find bugs or have suggestions feel free to write it in Issues.
 ## To Do:
 - [x] Save Settings
 - [ ] Auto update from github
+- [ ] Icon
 - [ ] Add visual effects
 - [ ] Add fortnite
 - [ ] Run in system tray
