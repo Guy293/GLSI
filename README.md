@@ -6,8 +6,18 @@ For now it only supports CS:GO. O plan adding Dota 2  & Fortnite and PUBG.
 
 
 ## Installation
-When the program is gonna be done i will update this.
-
+Download the latest release from [Here](https://github.com/Guy293/GLSI/releases)
+Unzip the folder
+Make sure your CS:GO is closed or restart the game later
+Open GLSI.exe
+Click on set up config file
+If it shows an eror find where steam library is located: \Counter-Strike Global Offensive\ folder then click Ok
+Now check wich stats you want and click start
+Now go to OBS or any other program you use for streaming, recording, ETC...
+Add new text Source
+Select Read from file and search the program directory and the state text file you want
+now set up your font, color, size, ETC... and click OK
+Have Fun!
 
 ## FAQ
 ### Can i get Banned?
@@ -18,9 +28,11 @@ If you find bugs or have suggestions feel free to write it in Issues.
 
 
 ## To Do:
-- [ ] Save Settings
+- [x] Save Settings
+- [ ] Auto update from github
 - [ ] Add visual effects
 - [ ] Add fortnite
+- [ ] Run in system tray
 
 ## Nerd shit
 yay im not alone!
